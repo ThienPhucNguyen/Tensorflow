@@ -1,5 +1,6 @@
 """
-Some built-in activation functions
+Some built-in activation functions (used to adjust weights and bias
+in neural networks)
 """
 import tensorflow as tf
 import numpy as np
@@ -35,7 +36,7 @@ print("softplus function:", session.run(tf.nn.softplus([-1., 0., 1.])))
 # ReLU = max(0, x)
 print("ELU function:", session.run(tf.nn.elu([-1., 0., 1.])))
 
-#-----------------------------------------------------------
+# -----------------------------------------------------------
 # plot the functions
 
 # initialize x range value for plotting

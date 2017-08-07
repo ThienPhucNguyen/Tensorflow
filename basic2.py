@@ -35,7 +35,7 @@ print("certain value matrix \n", session.run(B), "\n")
 print("random uniform matrix \n", session.run(C), "\n")
 print("numpy array based matrix \n", session.run(D), "\n")
 
-#-------------------------------------------
+# -------------------------------------------
 # matrix operations
 
 # addition and subtraction
