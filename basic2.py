@@ -38,10 +38,9 @@ print("numpy array based matrix \n", session.run(D), "\n")
 #-------------------------------------------
 # matrix operations
 
-# addition and substraction
+# addition and subtraction
 print("addition operation\n", session.run(A + B), "\n")
 print("substraction operation\n", session.run(A - B), "\n")
-
 # multiplication
 print("multiply operation\n", session.run(tf.matmul(B, identity_matrix)), "\n")
 

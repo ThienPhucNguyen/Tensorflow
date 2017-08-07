@@ -2,6 +2,7 @@
 Working with data sources
 """
 from sklearn import datasets
+from tensorflow.examples.tutorials.mnist import input_data
 import pandas as pd
 
 #-----------------------------------------------------------
@@ -44,6 +45,24 @@ print("number of samples:", len(birth_data))
 
 # number of labels
 print("number of labels:", len(birth_header), "\n")
+
+#-----------------------------------------------------------
+# MNIST data
+
+mnist = input_data.read_data_sets('MNIST_data/', one_hot=True)
+
+# number of train samples
+print('number of train samples:', len(mnist.train.images))
+
+# number of test samples
+print('number of test samples:', len(mnist.test.images))
+
+# number of validation samples
+print('number of validation samples:', len(mnist.validation.images))
+
+# label of the first sample
+print('the label of the first label:', mnist.train.labels[1, :])
+
 
 
 
